@@ -1,0 +1,775 @@
+.banner {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    opacity: 0;
+    z-index: -1;
+    background-color: var(--block-bck-color);
+    transform: translateY(-100%);
+    animation-name: goOutBanner;
+    animation-duration: 3s;
+    display: block;
+}
+
+.banner-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    /* border: 1px solid #fff; */
+}
+
+.banner-content h3 {
+    font-size: 75px;
+    font-family: 'Poppins-Thin';
+    text-align: center;
+}
+
+.banner-content img {
+    width: 25%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.banner-content .members {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 50px;
+    text-transform: uppercase;
+    width: 100%;
+    text-align: center;
+}
+
+.infoGen {
+    position: relative;
+    width: 80%;
+    height: 650px;
+    margin: auto;
+    margin-top: 75px;
+    /* border: 1px solid red; */
+}
+
+.infoGen .title {
+    position: relative;
+    height: 70px;
+    line-height: 70px;
+    text-align: center;
+    width: 100%;
+    font-size: 45px;
+    text-transform: uppercase;
+    font-family: 'Poppins-Thin';
+    letter-spacing: 10px;
+}
+
+.infoGen .container {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 85%;
+    height: 80%;
+    padding: 30px;
+    overflow: auto;
+    background-color: var(--block-bck-color);
+    border-radius: 20px;
+}
+
+.infoGen .container .subtitle {
+    text-align: center;
+    font-size: 24px;
+    font-family: 'Poppins-Light';
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+.infoGen .container .members {
+    width: 100%;
+    height: 45%;
+    margin: auto;
+    /* border: 1px solid red; */
+}
+
+.infoGen .container .members .member {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+    font-family: 'Poppins-Light';
+    letter-spacing: 1px;
+    margin: 10px;
+}
+
+.infoGen .container .members .projectManager,
+.infoGen .container .members .follower {
+    font-size: 24px;
+}
+
+.infoGen .container .members .member .jobName {
+    text-transform: uppercase;
+    color: var(--color-blue);
+}
+
+.infoGen .container .members .member .memberName {
+    text-transform: uppercase;
+    padding-right: 10px;
+    transition: 0.4s;
+}
+
+.infoGen .container .members .member .memberName:hover {
+    color: var(--color-blue);
+    letter-spacing: 2px;
+    margin-left: 20px;
+}
+
+.infoGen .container .members .allMember {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.infoGen .description {
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    font-size: 18px;
+    font-family: 'Poppins-Light';
+}
+
+.infoGen .description .subtitle {
+    font-size: 24px;
+    font-family: 'Poppins-Light';
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    border-top: 1px solid var(--color-blue);
+    padding-top: 15px;
+}
+
+.infoGen .description .text {
+    font-size: 18px;
+    letter-spacing: 1px;
+    width: 90%;
+    text-align: left;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.progress {
+    position: relative;
+    width: 80%;
+    height: 750px;
+    margin: auto;
+    margin-top: 75px;
+}
+
+.progress .title {
+    position: relative;
+    height: 70px;
+    line-height: 70px;
+    text-align: center;
+    width: 100%;
+    font-size: 45px;
+    text-transform: uppercase;
+    font-family: 'Poppins-Thin';
+    letter-spacing: 10px;
+}
+
+.progress .progressBar {
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 50px;
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    border-radius: 20px;
+    background-color: #000;
+    border: 1px solid #000;
+    box-shadow: 10px 10px 7px 7px rgba(0, 0, 0, 0.5);
+}
+
+.progress .completed {
+    position: absolute;
+    top: 15%;
+    left: 0%;
+    transform: translate(0%, -50%);
+    background-color: var(--color-blue);
+    animation-name: loadingBar;
+    animation-duration: 2s;
+    animation-delay: 1.3s;
+}
+
+.progress .progressValue {
+    position: absolute;
+    z-index: 99;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, 30%);
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--txt-color-bis);
+    font-size: 40px;
+    font-family: 'Poppins-Light';
+    text-shadow: -1px 0 #fff, 0 1px #fff, 1px 0 #fff, 0 -1px #fff;
+}
+
+.progress .descriptionStep {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 30px;
+    font-family: 'Poppins-Light';
+}
+
+.progress .lastActions {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    width: 75%;
+    height: calc(750px - 45%);
+    transform: translate(-50%, -50%);
+    /* border-top: 1px solid var(--txt-color); */
+    background-color: var(--block-bck-color);
+    padding: 20px;
+    border-radius: 20px;
+    padding-top: 50px;
+}
+
+.progress .lastActions .title {
+    position: absolute;
+    top: 0;
+    height: 60px;
+    width: 100%;
+    font-size: 30px;
+    letter-spacing: 5px;
+    font-family: 'Poppins-Light';
+    margin: 20px auto;
+}
+
+.progress .lastActions .slider {
+    position: absolute;
+    top: 70px;
+    width: 100%;
+    height: calc(100% - 70px);
+    margin: auto;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.progress .lastActions .slider .slide {
+    position: absolute;
+    width: 95%;
+    height: 100%;
+    background-color: var(--block-bck-color);
+    z-index: -1;
+}
+
+.progress .lastActions .slider .slide .pre,
+.progress .lastActions .slider .slide .nxt {
+    position: absolute;
+    top: 50%;
+    transform: translate(0%, -50%);
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    background-color: rgba(80, 80, 80, 0.5);
+    z-index: 99;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.progress .lastActions .slider .slide .pre:hover span,
+.progress .lastActions .slider .slide .nxt:hover span {
+    color: var(--color-blue);
+    font-size: 60px;
+    /* font-family: 'Poppins'; */
+}
+
+.progress .lastActions .slider .slide .pre {
+    left: 0;
+}
+
+.progress .lastActions .slider .slide .nxt {
+    right: 0;
+}
+
+.progress .lastActions .slider .slide .pre span,
+.progress .lastActions .slider .slide .nxt span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 40px;
+    transition: 0.4s;
+}
+
+.progress .lastActions .slider #slideNav{
+	width: 100%;
+	bottom: 12%;
+	height: 11px;
+	position: absolute;
+	text-align: center;
+	z-index: 9999;
+	cursor: default;
+}
+
+.progress .lastActions .slider #slideNav .dots{
+	top: -5px;
+	width: 18px;
+	height: 18px;
+	margin: 0 4px;
+	position: relative;
+	border-radius: 100%;
+	display: inline-block;
+	background-color: rgba(0, 0, 0, 0.6);
+	transition: .4s;
+}
+
+.progress .lastActions .slider #slideNav .dots:hover {
+	cursor: pointer;
+	background-color: rgba(255, 255, 255, 0.9);
+	transition: .25s
+}
+
+.progress .lastActions .slider .slide .subtitle {
+    position: absolute;
+    top: 15%;
+    left: 100px;
+    transform: translateY(-50%);
+    font-size: 20px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-family: 'Poppins-Light';
+    color: var(--color-blue);
+}
+
+.progress .lastActions .slider .slide .description {
+    font-size: 18px;
+    font-family: 'Poppins-Light';
+}
+
+
+.files {
+    position: relative;
+    width: 80%;
+    height: 650px;
+    margin: auto;
+    margin-top: 75px;
+    /* border: 1px solid red; */
+}
+
+.files .title {
+    position: relative;
+    height: 70px;
+    line-height: 70px;
+    text-align: center;
+    width: 100%;
+    font-size: 45px;
+    text-transform: uppercase;
+    font-family: 'Poppins-Thin';
+    letter-spacing: 10px;
+}
+
+.files .list {
+    position: relative;
+    width: 85%;
+    height: calc(100% - 80px);
+    margin: 25px auto;
+    padding: 20px;
+    background-color: var(--block-bck-color);
+    border-radius: 20px;
+    overflow: auto;
+}
+
+.files .list .information {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 28px;
+}
+
+.files .list .element {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    margin: 30px auto;
+    padding: 20px auto;
+    transition: 0.4s;
+    /* border: 1px solid green; */
+}
+
+.files .list .element i {
+    font-size: 50px;
+    margin-left: 10%;
+    transform: translateY(25%);
+    transition: 0.4s;
+}
+
+.files .list .element .subtitle {
+    width: 100%;
+    margin-right: 10%;
+    font-size: 35px;
+    letter-spacing: 1px;
+    text-align: center;
+    transform: translateY(-100%);
+    transition: 0.4s;
+}
+
+.files .list .element:hover {
+    color: var(--color-blue);
+    padding: 15px auto;
+    transform: translateY(-12%);
+}
+
+.files .list .element:hover i {
+    font-size: 60px;
+}
+
+.files .list .element:hover .subtitle {
+    letter-spacing: 3px;
+}
+
+.events {
+    position: relative;
+    margin: 100px auto;
+    width: 80%;
+    height: 800px;
+}
+
+.events .title {
+    position: relative;
+    height: 70px;
+    line-height: 70px;
+    text-align: center;
+    font-family: 'Poppins-Thin';
+    width: 100%;
+    font-size: 45px;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+}
+
+.events .list {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 85%;
+    height: 80%;
+    overflow: auto;
+    background-color: var(--block-bck-color);
+    border-radius: 20px;
+}
+
+.events .list li {
+    position: relative;
+    display: block;
+    width: 100%;
+    line-height: 50px;
+    text-align: center;
+    border-radius: 20px;
+    padding: 20px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #fff;
+}
+
+.events .list li .subinformation {
+    width: 95%;
+    margin: auto;
+    position: relative;
+    font-size: 18px;
+    font-family: 'Poppins-Light';
+    letter-spacing: 2px;
+    text-align: left;
+}
+
+cat {
+    color: var(--color-blue);
+    text-transform: uppercase;
+    font-size: 24px;
+}
+
+.follow {
+    position: relative;
+    width: 75%;
+    height: 70px;
+    background-color: var(--block-bck-color);
+    margin: 50px auto;
+    border-radius: 70px;
+}
+
+.follow span {
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+    letter-spacing: 2px;
+    font-family: 'Poppins-Light';
+    text-transform: uppercase;
+}
+
+.follow input {
+    position: absolute;
+    top: 50%;
+    left: 75%;
+    transform: translate(-50%, -50%);
+    width: 250px;
+    height: 40px;
+    font-size: 20px;
+    letter-spacing: 2px;
+    font-family: 'Poppins-Light';
+    text-transform: uppercase;
+    background-color: var(--color-blue);
+    color: var(--txt-color-bis);
+    border: none;
+    border-radius: 60px;
+    transition: 0.4s;
+}
+
+.follow input:hover {
+    width: 300px;
+    background-color: var(--color-blue-hover);
+    color: var(--txt-color);
+}
+
+.follow .unfollowPST {
+    left: 85%;
+    background-color: #b71540;
+    color: var(--txt-color);
+}
+
+.follow .unfollowPST:hover {
+    background-color: #eb2f06;
+}
+
+.mark {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    position: relative;
+    width: 85%;
+    margin: 50px auto;
+    height: 250px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+.mark form {
+    position: relative;
+    margin: 10px;
+    background-color: var(--block-bck-color);
+    border-radius: 20px;
+}
+
+.mark form .subtitle {
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    font-size: 18px;
+    position: relative;
+    text-align: center;
+    font-family: 'Poppins-Light';
+    letter-spacing: 1px;
+}
+
+.mark form .markPos {
+    width: 75px;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: none;
+    border: none;
+    color: var(--txt-color);
+    font-size: 30px;
+    font-family: 'Poppins-Light';
+    text-align: center;
+}
+
+.mark form input[type="submit"] {
+    position: relative;
+    margin-top: 125px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    background: none;
+    border: none;
+    padding: 5px 40px;
+    border-radius: 40px;
+    background-color: var(--color-blue);
+    color: var(--txt-color-bis);
+    font-size: 20px;
+    font-family: 'Poppins-Light';
+    letter-spacing: 2px;
+    transition: 0.4s;
+}
+
+.mark form input[type="submit"]:hover {
+    background-color: var(--color-blue-hover);
+}
+
+.mark form .markGen {
+    top: 55%;
+    background-color: var(--color-blue);
+    color: var(--txt-color-bis);
+    width: 150px;
+    height: 150px;
+    line-height: 150px;
+    border-radius: 150px;
+    text-align: center;
+    font-size: 35px;
+    letter-spacing: 1px;
+}
+
+.mark form den {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: none;
+    border: none;
+    color: var(--txt-color);
+    font-size: 35px;
+    font-family: 'Poppins-Light';
+    border-top: 2px solid var(--txt-color);
+    text-align: center;
+    padding: 5px;
+}
+
+.delete {
+    position: relative;
+    width: 75%;
+    margin: 50px auto;
+    height: 70px;
+    line-height: 70px;
+    font-size: 30px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    background-color: var(--block-bck-color);
+    border-radius: 100px;
+}
+
+.delete .title {
+    float: left;
+    margin-left: 50px;
+    font-size: 25px;
+    font-family: 'Poppins-Light';
+    color: #eb2f06;
+}
+
+.delete form {
+    float: right;
+    margin-right: 50px;
+}
+
+.delete form input[type="text"] {
+    background: none;
+    border: none;
+    width: 50px;
+    height: 50px;
+    color: var(--txt-color);
+    transform: translate(15%);
+    font-size: 30px;
+}
+
+.delete form input[type="submit"] {
+    position: absolute;
+    top: 50%;
+    left: 85%;
+    transform: translate(-50%, -50%);
+    width: 250px;
+    height: 40px;
+    font-size: 20px;
+    letter-spacing: 2px;
+    font-family: 'Poppins-Light';
+    text-transform: uppercase;
+    background-color: #b71540;
+    color: var(--txt-color);
+    border: none;
+    border-radius: 60px;
+    transition: 0.4s;
+}
+
+.delete form input[type="submit"]:hover {
+    width: 300px;
+    background-color: #eb2f06;
+}
+
+.download {
+    width: 75%;
+    margin: auto;
+}
+
+.download .title {
+    text-align: center;
+}
+
+.download form {
+    position: relative;
+    /* border: 1px solid red; */
+    height: 70px;
+}
+
+.download form label {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 24px;
+    font-family: 'Poppins-Light';
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    text-align: center;
+    background-color: var(--color-blue);
+    color: var(--txt-color-bis);
+    border-radius: 50px;
+    width: 100%;
+    height: 100%;
+    line-height: 70px;
+    transition: 0.4s;
+}
+
+.download form label:hover {
+    letter-spacing: 10px;
+    background-color: var(--color-blue-hover);
+}
+
+.downloadINFO {
+    position: fixed;
+    top: calc(100% - 30px);
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    color: var(--txt-color-bis);
+    background-color: var(--color-blue);
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    font-size: 24px;
+    font-family: 'Poppins-Light';
+    overflow: hidden;
+    transition: 0.4s;
+}
+
+.downloadINFO:hover {
+    top: 50%;
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+    background-color: #000;
+    color: #fff;
+    padding-top: 15%;
+    line-height: 100px;
+}

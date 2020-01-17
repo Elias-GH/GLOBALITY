@@ -1,0 +1,192 @@
+@keyframes showWelcomeMessage {
+	0% {
+		transform: translateY(0);
+		opacity: 1;
+		z-index: 99;
+	}
+	50% {
+		transform: translateY(0);
+		opacity: 1;
+		z-index: 99;
+	}
+	100% {
+		transform: translateY(-100%);
+		opacity: 0;
+	}
+}
+
+@keyframes putBlock {
+	0% {
+		opacity: 0;
+		transform: translate(-50%, -300px);
+	}
+	100% {
+		opacity: 1;
+		transform: translate(-50%, -50%);
+	}
+}
+
+@keyframes showTitle {
+	0% {
+		opacity: 0;
+		transform: translateY(-100px);
+	}
+	50% { opacity: 0; }
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+@keyframes showInscription {
+	0% {
+		opacity: 0;
+		transform: translate(-50%, 100px);
+	}
+	50% { opacity: 0; }
+	100% {
+		opacity: 1;
+		transform: translate(-50%, -50%);
+	}
+}
+
+@keyframes showLogo {
+	0% {
+		opacity: 0;
+		transform: translate(0px, -100px);
+	}
+	50% { opacity: 0; }
+	100% {
+		opacity: 1;
+		transform: translate(0px, 0px);
+	}
+}
+
+@keyframes showSubtitle {
+	0% {
+		opacity: 0;
+		transform: translateY(-50px);
+	}
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+@keyframes showInput {
+	0% {
+		opacity: 0;
+		transform: translateY(-25px);
+	}
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+@keyframes showButton {
+	0% {
+		opacity: 0;
+		transform: translate(-50%, -40px);
+	}
+	100% {
+		opacity: 1;
+		transform: translate(-50%, 0);
+	}
+}
+
+@keyframes showCategory {
+	0% {
+		opacity: 0;
+		transform: scale(0);
+	}
+	100% {
+		opacity: 1;
+		transform: scale(1);
+	}
+}
+
+@keyframes showBlock {
+	0% {
+		opacity: 0;
+		transform: translate(-50%, -100%);
+	}
+	100% {
+		opacity: 1;
+		transform: translate(-50%, -50%);
+	}
+}
+
+@keyframes showDays {
+	0% {
+		transform: scale(0);
+		color: #fff;
+	}
+	50% {
+		transform: scale(0);
+		color: #fff;
+	}
+	100% {
+		transform: scale(1);
+	}
+}
+
+@keyframes showAddEvent {
+	0% {
+		transform: scale(0) rotate(90deg);
+	}
+	75% {
+		transform: scale(0) rotate(-90deg);
+	}
+	100% {
+		transform: scale(1) rotate(0deg);
+	}
+}
+
+@keyframes showNotif {
+	0% {
+		opacity: 0;
+		width: 50%;
+	}
+
+	100% {
+		width: 75%;
+	}
+}
+
+@keyframes showProjects {
+	0% {
+		opacity: 0;
+		transform: scale(0);
+	}
+	100% {
+		opacity: 1;
+		transform: scale(0.8);
+	}
+}
+
+@keyframes goOutBanner {
+	0% {
+		transform: translate(0, 0);
+		opacity: 1;
+		z-index: 999;
+		display: block;
+	}
+	50% {
+		transform: translate(0, 0);
+		opacity: 1;
+		z-index: 999;
+		display: block
+	}
+	100% {
+		transform: translateY(-100%);
+		opacity: 0;
+		z-index: -1;
+		display: none;
+	}
+}
+
+@keyframes scroll{
+	0%{	opacity:.4;}
+	100%{opacity:1;}
+}

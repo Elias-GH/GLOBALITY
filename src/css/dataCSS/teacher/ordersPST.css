@@ -1,0 +1,493 @@
+.progress {
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+    width: 35%;
+    height: 75%;
+    background-color: var(--block-bck-color);
+    border-radius: 20px;
+    box-shadow: 12px 12px 5px 5px rgba(0, 0, 0, 0.8);
+}
+
+.progress .title {
+    font-size: 25px;
+    text-align: center;
+    letter-spacing: 3px;
+    height: 50px;
+    line-height: 50px;
+    font-family: 'Poppins-Light';
+}
+
+.progress .selectYearBlock {
+    display: inline-block;
+    position: relative;
+    font-size: 16px;
+    font-family: 'Poppins-Light';
+    width: 90%;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    height: 50px;
+    line-height: 50px;
+}
+
+.progress .selectYearBlock .subtitle {
+    display: inline-block;
+    color: var(--color-blue);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.progress .selectYearBlock .selectYear {
+    display: inline-block;
+    margin: auto 20px;
+    transition: 0.4s;
+}
+
+.progress .selectYearBlock .selectYear:hover {
+    color: var(--color-blue);
+    letter-spacing: 2px;
+}
+
+.progress .infoProject {
+    position: relative;
+    width: 90%;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    margin: 20px auto;
+    font-family: 'Poppins-Light';
+    /* border: 1px solid red; */
+}
+
+.progress .infoProject .step {
+    position: relative;
+    display: inline-block;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    background-color: var(--color-blue);
+    color: var(--txt-color-bis);
+    border-radius: 50px;
+    padding: 0px 10px;
+    margin: 0px 5px;
+    transition: 0.4s;
+}
+
+.progress .infoProject .step:hover {
+    background-color: var(--color-blue-hover);
+}
+
+.progress .infoStep {
+    position: relative;
+    width: 80%;
+    height: 60%;
+    margin: auto;
+}
+
+.progress .infoStep .list {
+    height: calc(100% - 50px);
+    overflow: auto;
+}
+
+.progress .infoStep .list .list-element {
+    margin: 5px auto;
+    font-family: 'Poppins-Light';
+    list-style-type: none;
+    /* list-style-position: inside; */
+}
+
+.progress .infoStep .list .list-element input {
+    background-color: red;
+    border: none;
+}
+
+.progress .infoStep .list input[type="submit"] {
+    position: absolute;
+    left: 50%;
+    bottom: -40px;
+    transform: translateX(-50%);
+    width: 200px;
+    height: 35px;
+    line-height: 35px;
+    font-size: 16px;
+    background-color: red;
+    border-radius: 50px;
+    color: var(--txt-color-bis);
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 1px;
+    border: none;
+    transition: 0.4s;
+}
+
+.progress .infoStep .list input[type="submit"]:hover {
+    width: 250px;
+    letter-spacing: 5px;
+}
+
+.addOrders {
+    position: absolute;
+    top: 50%;
+    left: 75%;
+    transform: translate(-50%, -50%);
+    width: 35%;
+    height: 75%;
+    background-color: var(--block-bck-color);
+    border-radius: 20px;
+    box-shadow: 12px 12px 5px 5px rgba(0, 0, 0, 0.8);
+}
+
+.addOrders .title {
+    font-size: 25px;
+    text-align: center;
+    letter-spacing: 3px;
+    height: 50px;
+    line-height: 50px;
+    font-family: 'Poppins-Light';
+}
+
+.addOrders form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    height: 80%;
+    /* border: 1px solid red; */
+}
+
+.addOrders form .inputBox {
+    display: block;
+    width: 90%;
+    margin: 25px auto;
+    font-family: 'Poppins-Light';
+    font-size: 16px;
+    letter-spacing: 1px;
+    /* border: 1px solid green; */
+}
+
+.addOrders form .inputBox .inputElement {
+    display: inline-block;
+    width: 32%;
+    text-align: center;
+}
+
+.addOrders form .inputBox input,
+.addOrders form .inputBox select,
+.addOrders form .inputBox textarea {
+    background: none;
+    border: none;
+    color: var(--txt-color);
+    font-family: 'Poppins-Light';
+    letter-spacing: 1px;
+    font-size: 16px;
+    padding: 0px 10px;
+}
+
+.addOrders form .inputBox textarea {
+    background-color: var(--block-bck-color-hover);
+    border-radius: 20px;
+    width: 100%;
+    height: 100px;
+    margin: 20px auto;
+    padding: 10px;
+}
+
+.addOrders form input[type='submit'] {
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    width: 200px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 16px;
+    background-color: var(--color-blue);
+    border-radius: 50px;
+    color: var(--txt-color-bis);
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 1px;
+    border: none;
+    transition: 0.4s;
+}
+
+.addOrders form input[type='submit']:hover {
+    width: 250px;
+    background-color: var(--color-blue-hover);
+}
+
+.reportFiles {
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+    width: 35%;
+    height: 75%;
+    background-color: var(--block-bck-color);
+    border-radius: 20px;
+    box-shadow: 12px 12px 5px 5px rgba(0, 0, 0, 0.8);
+}
+
+.reportFiles .title {
+    font-size: 25px;
+    text-align: center;
+    letter-spacing: 3px;
+    height: 50px;
+    line-height: 50px;
+    font-family: 'Poppins-Light';
+}
+
+.reportFiles .reportByYear {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    position: relative;
+    width: 90%;
+    height: 50px;
+    line-height: 50px;
+    margin: auto;
+}
+
+.reportFiles .reportByYear .year {
+    position: relative;
+    text-align: center;
+    width: 100%;
+    color: var(--txt-color);
+    font-size: 16px;
+    font-family: 'Poppins-Light';
+    letter-spacing: 1px;
+    transition: 0.4s;
+}
+
+.reportFiles .reportByYear .year:hover {
+    color: var(--color-blue);
+    letter-spacing: 3px;
+}
+
+.reportFiles .showReport {
+    width: 90%;
+    height: 80%;
+    margin: auto;
+}
+
+.reportFiles .showReport .list {
+    width: 95%;
+    height: 70%;
+    margin: auto;
+    overflow: auto;
+}
+
+.reportFiles .showReport .list .report .subtitle {
+    width: 100%;
+    font-size: 20px;
+    font-family: 'Poppins-Light';
+    text-align: center;
+    margin-top: 30%;
+}
+
+.reportFiles .showReport .list .subtitle {
+    width: 100%;
+    font-size: 20px;
+    font-family: 'Poppins-Light';
+    text-align: center;
+    margin-top: 30%;
+    color: var(--color-blue);
+}
+
+.reportFiles .showReport .list .report {
+    padding: 20px;
+    border-radius: 20px;
+    border-bottom: 1px solid var(--txt-color);
+    display: inline-block;
+}
+
+.reportFiles .showReport .list .report .info {
+    display: inline-block;
+    margin: 0;
+    width: 75%;
+    margin: auto;
+    font-family: 'Poppins-Light';
+    letter-spacing: 1px;
+}
+
+.reportFiles .showReport .list input[type="submit"] {
+    position: absolute;
+    left: 50%;
+    bottom: 30px;
+    transform: translateX(-50%);
+    width: 200px;
+    height: 35px;
+    line-height: 35px;
+    font-size: 16px;
+    background-color: red;
+    border-radius: 50px;
+    color: var(--txt-color-bis);
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 1px;
+    border: none;
+    transition: 0.4s;
+}
+
+.reportFiles .showReport .list input[type="submit"]:hover {
+    width: 250px;
+    letter-spacing: 5px;
+}
+
+.addReport {
+    position: absolute;
+    top: 50%;
+    left: 75%;
+    transform: translate(-50%, -50%);
+    width: 35%;
+    height: 75%;
+    background-color: var(--block-bck-color);
+    border-radius: 20px;
+    box-shadow: 12px 12px 5px 5px rgba(0, 0, 0, 0.8);
+}
+
+.addReport .title {
+    font-size: 25px;
+    text-align: center;
+    letter-spacing: 3px;
+    height: 50px;
+    line-height: 50px;
+    font-family: 'Poppins-Light';
+}
+
+.addReport form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    height: 80%;
+    /* border: 1px solid red; */
+}
+
+.addReport form .inputBox {
+    display: block;
+    width: 90%;
+    margin: 25px auto;
+    font-family: 'Poppins-Light';
+    font-size: 16px;
+    letter-spacing: 1px;
+    /* border: 1px solid green; */
+}
+
+.addReport form .inputBox .inputElement {
+    display: inline-block;
+    width: 32%;
+    text-align: center;
+}
+
+.addReport form .inputBox input,
+.addReport form .inputBox select,
+.addReport form .inputBox textarea {
+    background: none;
+    border: none;
+    color: var(--txt-color);
+    font-family: 'Poppins-Light';
+    letter-spacing: 1px;
+    font-size: 16px;
+    padding: 0px 10px;
+}
+
+.addReport form .inputBox textarea {
+    background-color: var(--block-bck-color-hover);
+    border-radius: 20px;
+    width: 100%;
+    height: 100px;
+    margin: 20px auto;
+    padding: 10px;
+}
+
+.addReport form input[type='submit'] {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    transform: translateX(0%);
+    width: 200px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 16px;
+    background-color: var(--color-blue);
+    border-radius: 50px;
+    color: var(--txt-color-bis);
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 1px;
+    border: none;
+    transition: 0.4s;
+}
+
+.addReport form input[type='submit']:hover {
+    width: 250px;
+    background-color: var(--color-blue-hover);
+}
+
+.addReport form .fileModel {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 200px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 18px;
+    background-color: var(--color-blue);
+    border-radius: 50px;
+    color: var(--txt-color-bis);
+    text-transform: uppercase;
+    text-align: center;
+    font-family: 'Poppins-Light';
+    letter-spacing: 1px;
+    border: none;
+    transition: 0.4s;
+}
+
+.addReport form .fileModel:hover {
+    width: 250px;
+    background-color: var(--color-blue-hover);
+}
+
+.default {
+    position: absolute;
+    top: 70px;
+    width: 100%;
+    height: calc(100vh - 70px);
+}
+
+.default .bigChoice {
+    background-color: var(--block-bck-color);
+    border-radius: 20px;
+    width: 30%;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    box-shadow: 5px 5px 16px 6px rgba(0, 0, 0, 0.8);
+    font-size: 20px;
+    color: var(--color-blue);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-family: 'Poppins-Light';
+    transition: 0.4s;
+}
+
+.default .bigChoice:hover {
+    background-color: var(--color-blue);
+    color: var(--txt-color-bis);
+}
+
+.default .btnLeft {
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+}
+
+.default .btnRight {
+    position: absolute;
+    top: 50%;
+    right: 15%;
+    transform: translate(0%, -50%);
+}

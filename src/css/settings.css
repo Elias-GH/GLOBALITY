@@ -1,0 +1,229 @@
+.persoInformations {
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    width: 40%;
+    height: calc(100vh - 70px - 30%);
+    background-color: var(--block-bck-color);
+    box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+    transition: 0.4s;
+}
+
+.persoInformations .title {
+    color: var(--color-blue);
+    font-size: 30px;
+    letter-spacing: 7px;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 60px;
+    border-bottom: 1px solid var(--color-blue);
+}
+
+.block {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+}
+
+.persoInformations .information {
+    margin-top: 30px;
+}
+
+.persoInformations .information .subtitle {
+    display: inline-block;
+    color: var(--color-blue);
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-family: 'Poppins-Light';
+    font-size: 30px;
+}
+
+output {
+    color: var(--txt-color);
+    font-size: 30px;
+}
+
+.persoInformations .information .mail {
+    position: relative;
+    color: var(--txt-color);
+    text-decoration: none;
+}
+
+.persoInformations .information .mail:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 1px;
+    width: 0;
+    border-bottom: 1px solid var(--color-blue);
+    transition: 0.5s;
+}
+
+.persoInformations .information .mail:hover:before {
+    width: 100%;
+}
+
+.themeBlock {
+    position: absolute;
+    top: 20%;
+    right: 10%;
+    width: 25%;
+    height: 60px;
+    background-color: var(--block-bck-color);
+    border-radius: 20px;
+    transition: 0.4s;
+    box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.5);
+}
+
+.themeBlock:hover {
+    height: 250px;
+}
+
+.themeBlock .line {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 0%;
+    transition: 0.4s;
+    height: 1px;
+    border-bottom: 1px solid var(--color-blue);
+}
+
+.themeBlock:hover .line {
+    width: 100%;
+}
+
+.themeBlock .content {
+    display: none;
+    opacity: 0;
+}
+
+.themeBlock:hover .content {
+    display: block;
+    opacity: 1;
+}
+
+.themeBlock .title {
+    position: absolute;
+    color: var(--color-blue);
+    font-size: 30px;
+    height: 60px;
+    width: 100%;
+    border-radius: 20px;
+    background-color: var(--block-bck-color);
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 60px;
+    z-index: 99;
+}
+
+.themeBlock .themeSelect {
+    position: absolute;
+    opacity: 1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 250px;
+    transition: .3s;
+    z-index: 1;
+}
+
+.themeBlock select {
+	position: relative;
+	left: 50%;
+	transform: translateX(-50%);
+	text-align: center;
+	width: 100%;
+	height: 30px;
+	background-image: none;
+	box-shadow: none;
+	background: var(--block-bck-color);
+	outline: none;
+	appearance: none;
+	border: none;
+	text-transform: uppercase;
+	font-family: 'Poppins';
+	letter-spacing: 3px;
+	color: var(--txt-color);
+}
+
+.customSelect:before {
+	content: '\25BC';
+	color: var(--txt-color);
+	text-align: center;
+	position: absolute;
+	top: 0;
+	right: 0px;
+	width: 30px;
+	height: 30px;
+	line-height: 30px;
+	background-color: var(--block-bck-color);
+	z-index: 990;
+}
+
+.themeBlock select option {
+	position: relative;
+	left: 50%;
+	transform: translateX(-50%);
+	text-align: center;
+	width: 90%;
+	height: 30px;
+	background-image: none;
+	box-shadow: none;
+	background: var(--block-bck-color);
+	outline: none;
+	border-radius: 10px;
+	appearance: none;
+	border: none;
+	text-transform: uppercase;
+	font-family: 'Poppins';
+	letter-spacing: 3px;
+	color: var(--txt-color);
+	border: 1px solid var(--txt-color);
+}
+
+input[type = "submit"] {
+    background: transparent;
+    border: none;
+    outline: none;
+	letter-spacing: 3px;
+	font-family: 'Poppins';
+    color: var(--txt-color-bis);
+    background: var(--color-blue);
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 20px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: all 0.5s ease-out;
+}
+
+input[type = "submit"]:hover {
+    padding: 10px 40px;
+}
+
+.fonctionBlock {
+    top: 70%;
+}
+
+.fonctionBlock:hover {
+    top: calc(70% - 200px);
+}
+
+.fonctionBlock .content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 75%;
+    transform: translate(-50%, -50%);
+}
+
+.fonctionBlock:hover .content input[type='submit'] {
+    position: relative;
+    bottom: -20px;
+}

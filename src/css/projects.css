@@ -1,0 +1,44 @@
+@import url('themes/colorDefault.css');
+
+.tutorials {
+    display: block;
+    position: relative;
+    width: 50%;
+    margin: 50px auto;
+    text-align: center;
+    background-color: var(--block-bck-color);
+    border-radius: 15px;
+    padding: 20px;
+}
+
+.tuto {
+    margin: 30px auto;
+}
+
+.title {
+    font-size: 40px;
+    color: var(--color-blue);
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+.header-menu {
+    position: relative;
+    height: 70px;
+}
+
+.header button {
+    position: relative;
+    font-size: 40px;
+    line-height: 70px;
+    transform: scale(0.7);
+    transition: 0.4s;
+    margin: 0;
+    padding: 0;
+    margin-right: 20px;
+}
+
+.header button:hover {
+    color: var(--color-blue);
+    transform: scale(1);
+}

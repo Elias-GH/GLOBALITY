@@ -1,0 +1,60 @@
+.menu {
+    position: absolute;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 95%;
+    height: 55vh;
+    overflow: hidden;
+}
+
+.menu .division {
+    position: relative;
+    width: 95%;
+    height: 80%;
+    border-radius: 20px;
+    overflow: hidden;
+    transition: 0.4s;
+}
+
+.menu .division i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 150px;
+    transition: 0.4s;
+}
+
+.menu .division .subtitle {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    font-size: 24px;
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-family: 'Poppins-Light';
+    transition: 0.4s;
+}
+
+.menu .division:hover {
+    background-color: var(--block-bck-color);
+    box-shadow: 10px 10px 5px 5px rgba(0, 0, 0, 0.7);
+}
+
+.menu .division:hover i {
+    top: 40%;
+    transform: translate(-50%, -50%) scale(0.75);
+    color: var(--color-blue);
+}
+
+.menu .division:hover .subtitle {
+    bottom: 10%;
+    transform: translate(-50%, -50%) scale(1);
+    color: var(--color-blue);
+}

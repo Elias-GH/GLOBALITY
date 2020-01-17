@@ -1,0 +1,327 @@
+.extractData {
+    position: relative;
+    width: 85%;
+    height: 40vh;
+    margin: 20px auto;
+}
+
+.extractData .title {
+    text-align: center;
+    height: 50px;
+    line-height: 50px;
+}
+
+.extractData .choices {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-top: 20px;
+    height: calc(100% - 70px);
+}
+
+.extractData .choices button {
+    position: relative;
+    width: 95%;
+    height: 95%;
+    border-radius: 20px;
+    margin: auto;
+    transition: 0.4s;
+}
+
+.extractData .choices button:hover {
+    background-color: var(--block-bck-color);
+    box-shadow: 10px 10px 10px 2px rgba(0, 0, 0, 0.8);
+}
+
+.extractData .choices button .subject {
+    position: absolute;
+    top: 42%;
+    left: 50%;
+    transform: translate(-50%);
+    width: 80%;
+    text-align: center;
+    font-family: 'Poppins-Light';
+    font-size: 16px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: 0.4s;
+}
+
+.extractData .choices button .extract {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%) scale(0);
+    width: 50%;
+    text-align: center;
+    font-family: 'Poppins-Light';
+    font-size: 12px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: 0.4s;
+}
+
+.extractData .choices button:hover .subject {
+    top: 30%;
+    color: var(--color-blue);
+    transform: translate(-50%) scale(1.2);
+}
+
+.extractData .choices button:hover .extract {
+    bottom: 20%;
+    color: var(--txt-color-bis);
+    transform: translate(-50%) scale(1.2);
+    padding: 5px;
+    letter-spacing: 3px;
+    background-color: var(--color-blue);
+    border-radius: 100px;
+}
+
+.extractForm {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70%;
+    height: 60vh;
+    background-color: var(--block-bck-color);
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 10px 10px 10px 5px rgba(0, 0, 0, 0.9);
+}
+
+.extractForm .title {
+    text-align: center;
+}
+
+.extractForm .searchProject {
+    border: none;
+    position: relative;
+    background-color: var(--block-bck-color);
+    border-radius: 20px;
+    width: 75%;
+    height: 60px;
+    margin-left: 50%;
+    margin-top: 30px;
+    transform: translateX(-50%);
+    padding: 20px;
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: var(--txt-color);
+    transition: 0.3s;
+}
+
+.extractForm .searchProject:focus {
+    color: var(--color-blue);
+    letter-spacing: 7px;
+}
+
+.extractForm .allProjects {
+    position: relative;
+    width: 90%;
+    margin: 30px auto;
+    height: 250px;
+    overflow: auto;
+}
+
+.extractForm .allProjects .project {
+    position: relative;
+    line-height: 60px;
+    text-align: left;
+    width: 50%;
+    height: 60px;
+    border-radius: 60px;
+    color: var(--txt-color-bis);
+    background-color: var(--color-blue);
+    margin: 20px auto;
+    padding: 0px 30px;
+    transition: 0.4s;
+}
+
+.extractForm .allProjects .project .titleProject {
+    letter-spacing: 2px;
+    font-family: 'Poppins';
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.extractForm .allProjects .project .titleProject span {
+    position: absolute;
+    right: 30px;
+    opacity: 0;
+    transition: 0.4s;
+}
+
+.extractForm .allProjects .project:hover {
+    width: 75%;
+    background-color: var(--color-blue-hover);
+}
+
+.extractForm .allProjects .project:hover .titleProject {
+    letter-spacing: 7px;
+}
+
+.extractForm .allProjects .project:hover span {
+    opacity: 1;
+    float: right;
+}
+
+.extractForm .searchStudent {
+    border: none;
+    position: relative;
+    background-color: var(--block-bck-color);
+    border-radius: 20px;
+    width: 75%;
+    height: 60px;
+    margin-left: 50%;
+    margin-top: 30px;
+    transform: translateX(-50%);
+    padding: 20px;
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: var(--txt-color);
+    transition: 0.3s;
+}
+
+.extractForm .searchStudent:focus {
+    color: var(--color-blue);
+    letter-spacing: 7px;
+}
+
+.extractForm .allStudents {
+    position: relative;
+    width: 90%;
+    margin: 30px auto;
+    height: 250px;
+    overflow: auto;
+}
+
+.extractForm .allStudents .student {
+    position: relative;
+    line-height: 60px;
+    text-align: left;
+    width: 50%;
+    height: 60px;
+    border-radius: 60px;
+    color: var(--txt-color-bis);
+    background-color: var(--color-blue);
+    margin: 20px auto;
+    padding: 0px 30px;
+    transition: 0.4s;
+}
+
+.extractForm .allStudents .student .nameStudent {
+    letter-spacing: 2px;
+    font-family: 'Poppins';
+    text-transform: uppercase;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.extractForm .allStudents .student .nameStudent span {
+    position: absolute;
+    right: 30px;
+    opacity: 0;
+    transition: 0.4s;
+}
+
+.extractForm .allStudents .student:hover {
+    width: 75%;
+    background-color: var(--color-blue-hover);
+}
+
+.extractForm .allStudents .student:hover .nameStudent {
+    letter-spacing: 7px;
+}
+
+.extractForm .allStudents .student:hover span {
+    opacity: 1;
+    float: right;
+}
+
+.extractForm .extractCat .bigButton {
+    position: absolute;
+    bottom: 15%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 75%;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    border-radius: 10px;
+    font-family: 'Poppins-Light';
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--txt-color-bis);
+    background-color: var(--color-blue);
+    transition: 0.4s;
+}
+
+.extractForm .extractCat .bigButton:hover {
+    width: 85%;
+    border-radius: 60px;
+    letter-spacing: 6px;
+}
+
+.extractForm .extractCat select {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    height: 60px;
+    line-height: 60px;
+    border: none;
+    background: none;
+    text-align: center;
+    color: var(--txt-color);
+    background-color: var(--block-bck-color);
+    font-family: 'Poppins-Light';
+    font-size: 18px;
+    outline: none;
+    border-radius: 60px;
+    border: 1px solid var(--color-blue);
+}
+
+.mid {
+    top: 50%;
+}
+
+option {
+    color: var(--txt-color);
+    font-family: 'Poppins-Light';
+    font-size: 18px;
+    outline: none;
+    background-color: var(--block-bck-color);
+}
+
+.downloadINFO {
+    position: fixed;
+    top: calc(100% - 30px);
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    color: var(--txt-color-bis);
+    background-color: var(--color-blue);
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    font-size: 24px;
+    font-family: 'Poppins-Light';
+    overflow: hidden;
+    transition: 0.4s;
+}
+
+.downloadINFO:hover {
+    top: 50%;
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+    background-color: #000;
+    color: #fff;
+    padding-top: 15%;
+    line-height: 100px;
+}

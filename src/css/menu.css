@@ -1,0 +1,289 @@
+@import url('../fonts/fonts.css');
+@import url('themes/colorDefault.css');
+@import url('keyframes.css');
+
+.welcomeMessage {
+	position: absolute;
+	z-index: -1;
+	height: 100vh;
+	width: 100%;
+	background-color: var(--block-bck-color-hover);
+	transform: translateY(-100%);
+	animation-name: showWelcomeMessage;
+	animation-duration: 4s;
+}
+
+.welcomeMessage h1 {
+	position: absolute;
+	top: 40%;
+	left: 50%;
+	width: 100%;
+	text-align: center;
+	transform: translate(-50%, -50%);
+	text-transform: uppercase;
+	letter-spacing: 7px;
+	font-size: 50px;
+	font-family: 'Poppins-Thin';
+	color: var(--txt-color);
+}
+
+.welcomeMessage img {
+	position: absolute;
+	bottom: 20px;
+	left: 15px;
+	width: 200px
+}
+
+.welcomeMessage .signed {
+	position: absolute;
+	bottom: 30px;
+	right: 30px;
+	font-size: 30px;
+}
+
+.welcomeMessage .description {
+	position: absolute;
+	top: 60%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-size: 30px;
+	text-align: center;
+}
+
+.titleProject {
+	position: absolute;
+	right: 2%;
+	bottom: 1%;
+	font-size: 45px;
+	letter-spacing: 5px;
+	font-family: 'Poppins-Thin';
+}
+
+.block {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    width: 50%;
+    margin: auto;
+    transform: translate(-50%, -50%);
+	transition: 0.5s;
+	border-radius: 20px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    height: 310px;
+    margin: 25px auto;
+}
+
+.category {
+    text-align: center;
+    font-size: 5px;
+    text-decoration: none;
+    text-transform: uppercase;
+	outline: none;
+    transition: 0.3s;
+    color: transparent;
+    margin: 30px;
+    padding: 20px;
+	border-radius: 20px;
+	/* animation-name: showCategory; */
+	/* animation-duration: 2s; */
+}
+
+.category i {
+    font-size: 180px;
+    transition: 0.3s;
+    color: var(--txt-color);
+}
+
+.category:hover {
+    background-color: var(--block-bck-color);
+    box-shadow: 10px 12px 24px 0px rgba(0,0,0,0.2);
+    border-radius: 15px;
+    font-size: 30px;
+    color: var(--txt-color);
+}
+
+.category:hover i {
+    font-size: 125px;
+    color: var(--color-blue);
+}
+
+.category:hover .setting {
+	transform: rotate(90deg);
+}
+
+.category .subtitle {
+    padding-top: 40px;
+}
+
+.btn-aside {
+	display: inline-block;
+	position: absolute;
+	top: 2%;
+	right: 2%;
+	overflow: hidden;
+	outline: none;
+	text-decoration: none;
+  	border: none;
+	font-size: 80px;
+	color: var(--txt-color);
+	width: 100px;
+	height: 100px;
+	line-height: 100px;
+	text-align: center;
+	transition: 0.3s ease;
+}
+
+.btn-aside:hover {
+	background-color: var(--block-bck-color);
+	color: var(--color-blue);
+	border-radius: 100px;
+	transform: rotate(90deg);
+	outline: none;
+}
+
+.aside {
+    position: absolute;
+	z-index: 99;
+	display: block;
+    top: 50%;
+    right: -8%;
+	width: 0;
+	height: 100%;
+	background-color: var(--block-bck-color);
+    transform: translate(-50%, -50%);
+	transition: 0.3s;
+	overflow: hidden;
+}
+
+.aside .link-aside {
+    display: block;
+	width: auto;
+	position: relative;
+    margin-top: 20px;
+	padding: 5px 10px;
+    color: var(--txt-color);
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    text-transform: uppercase;
+	transition: 0.3s;
+}
+
+.aside .link-aside:before {
+    content: '';
+	position: absolute;
+	top: 0;
+	left: 247px;
+	width: 1px;
+	height: 0px;
+	opacity: 1;
+	transition: 0.3s;
+}
+
+.aside .link-aside:hover {
+    color: var(--color-blue);
+	box-shadow: 0px 12px 24px 10px rgba(0,0,0,0.5);
+}
+
+.aside .link-aside:hover:before {
+	height: 100%;
+	background-color: var(--color-blue);
+}
+
+.linkTitle {
+	position: absolute;
+	top: 50px;
+	left: 50%;
+	font-size: 60px;
+	font-family: 'Poppins-Thin';
+	transform: translate(-50%, -50%);
+	transition: 0.5s;
+}
+
+.show {
+    display: block;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+.linksESIEA {
+	position: absolute;
+	top: 25%;
+	left: 57%;
+	transform: rotateX(90deg) translate(-50%, -50%) scale(0);
+	width: 1050px;
+	height: 0;
+	overflow: hidden;
+	opacity: 0;
+	transition: 1s;
+}
+
+.linksESIEA .links {
+	float: left;
+	position: relative;
+	display: inline-block;
+	text-decoration: none;
+	letter-spacing: 2px;
+	margin-left: 20px;
+	color: var(--txt-color);
+	background-color: var(--block-bck-color);
+	width: 150px;
+	height: 150px;
+	font-size: 80px;
+	letter-spacing: 2px;
+	text-align: center;
+	padding-top: 20px;
+	font-family: 'Poppins-Light';
+	border-radius: 20px;
+	border: none;
+	transition: 0.3s;
+}
+
+.linksESIEA .links:hover {
+	color: var(--color-blue);
+	box-shadow: 5px 5px 7px 7px rgba(0, 0, 0, 0.8);
+}
+
+.webu4 {
+	background-image: url('../../src/img/logoLink/ESIEAlogoWebU4.png');
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+	padding: 10px;
+}
+
+.portail {
+	background-image: url('../../src/img/logoLink/ESIEAlogoPortail.png');
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+	padding: 10px;
+}
+
+.inter {
+	background-image: url('../../src/img/logoLink/ESIEAlogoWikiInter.png');
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+	padding: 10px;
+}
+
+.edt {
+	background-image: url('../../src/img/logoLink/edt.png');
+	background-position: center;
+	background-size: cover;
+}
+
+.learning {
+	background-image: url('../../src/img/logoLink/moodle.png');
+	background-position: center;
+	background-size: cover;
+}

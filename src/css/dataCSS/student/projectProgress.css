@@ -1,0 +1,314 @@
+.infoProject {
+    position: absolute;
+    top: 70px;
+    left: 0;
+    height: calc(100vh - 70px);
+    width: 25%;
+    background-color: var(--block-bck-color);
+    /* border-right: 1px solid var(--color-blue); */
+    box-shadow: 10px 0px 15px 5px rgba(0, 0, 0, 0.4);
+}
+
+stepProgress {
+    color: var(--color-blue);
+    text-transform: uppercase;
+    transition: 0.6s;
+}
+
+.noContent {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 24px;
+    letter-spacing: 1px;
+    font-family: 'Poppins-Light';
+}
+
+.progressLine {
+    position: absolute;
+    left: calc(25% - 50px);
+    bottom: 0px;
+    width: 50px;
+    height: calc(100% - 70px);
+    border-right: 2px solid var(--color-blue);
+    animation-name: showProgressLine;
+    animation-duration: 2s;
+}
+
+.steps {
+    position: absolute;
+    top: 42%;
+    transform: translateY(-50%);
+    width: 100%;
+}
+
+.infoProject .step {
+    position: relative;
+    display: block;
+    text-decoration: none;
+    color: var(--txt-color);
+    font-size: 18px;
+    font-family: 'Poppins-Light';
+    text-align: center;
+    width: 90%;
+    margin: auto;
+    letter-spacing: 2px;
+    padding: 10px 20px;
+    border-radius: 50px;
+    transition: 0.6s;
+}
+
+.infoProject .step:hover {
+    background-color: var(--block-bck-color-hover);
+    background-color: var(--color-blue);
+    color: var(--txt-color-bis);
+}
+
+.infoProject .step:hover stepProgress {
+    color: var(--txt-color-bis);
+}
+
+.infoStep {
+    position: absolute;
+    top: 150px;
+    left: 30%;
+    width: 60%;
+    height: calc(100% - 200px);
+    background-color: var(--block-bck-color);
+    border-radius: 20px;
+}
+
+.infoStep .title {
+    padding: 10px 20px;
+    font-size: 35px;
+    border-bottom: 1px solid #fff;
+    font-family: 'Poppins-Light';
+}
+
+.infoStep form label{
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: none;
+    border: none;
+    font-size: 40px;
+    color: var(--txt-color);
+    font-family: 'Poppins-Light';
+    text-align: center;
+    transition: 0.4s;
+    transform: scale(0.7);
+}
+
+.infoStep form label:hover,
+.infoStep form .confirmStep {
+    color: var(--txt-color-bis);
+    background-color: var(--color-blue);
+    cursor: crosshair;
+    transform: scale(1);
+}
+
+.infoStep .list {
+    position: relative;
+    width: 95%;
+    height: calc(95% - 74px);
+    margin: auto;
+}
+
+.infoStep .list .list-element {
+    margin: 30px 5px;
+    font-size: 18px;
+    font-family: 'Poppins-Light';
+}
+
+deadLine {
+    color: red;
+}
+
+.lastActions {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 75%;
+    height: 80vh;
+    margin: 30px auto;
+    padding: 20px;
+    border-radius: 20px;
+    text-align: center;
+    background-color: var(--block-bck-color);
+    box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.8);
+}
+
+.lastActions .list-actions {
+    position: relative;
+    height: 70%;
+    overflow: auto;
+}
+
+.lastActions .list-actions .action {
+    position: relative;
+    width: 100%;
+    border-radius: 20px;
+    border-top: 1px solid var(--txt-color);
+    border-bottom: 2px solid var(--txt-color);
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.lastActions .list-actions .action .info {
+    color: var(--txt-color);
+    font-size: 20px;
+    font-family: 'Poppins-Light';
+    margin: 10px;
+    width: 75%;
+    margin: auto;
+}
+
+upp {
+    text-transform: uppercase;
+    color: var(--color-blue);
+}
+
+.titleAction {
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 26px;
+}
+
+.authorAction {
+    text-transform: uppercase;
+}
+
+.deleteAction {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    background-color: red;
+    text-transform: uppercase;
+    padding: 5px 30px;
+    border-radius: 50px;
+    font-size: 18px;
+    letter-spacing: 3px;
+    font-family: 'Poppins-Light';
+    transform: rotate(-90deg) translate(10%, -20px);
+    transition: 0.4s;
+}
+
+.deleteAction:hover {
+    letter-spacing: 5px;
+}
+
+.lastActions .addActionBtn {
+    padding: 10px 40px;
+    background-color: var(--color-blue);
+    margin: 50px;
+    border-radius: 100px;
+    color: var(--txt-color-bis);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 20px;
+    font-family: 'Poppins-Light';
+    transition: 0.4s;
+}
+
+.lastActions .addActionBtn:hover {
+    padding: 10px 70px;
+    letter-spacing: 5px;
+    background-color: var(--color-blue-hover);
+}
+
+.addAction {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70%;
+    height: 60vh;
+    z-index: 999;
+    background-color: var(--block-bck-color-hover);
+    border: 1px solid var(--color-blue);
+    border-radius: 20px;
+}
+
+.addAction .title {
+    text-align: center;
+}
+
+.addAction form {
+    display: block;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    height: 80%;
+    margin: auto;
+}
+
+.addAction form .titleAction {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    background: none;
+    border: none;
+    color: var(--txt-color);
+    letter-spacing: 2px;
+    transition: 0.4s;
+}
+
+.addAction form .titleAction:focus {
+    color: var(--color-blue);
+    letter-spacing: 5px;
+}
+
+.addAction form textarea {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: none;
+    border: none;
+    color: var(--txt-color);
+    width: 85%;
+    height: 70%;
+    font-family: 'Poppins-Light';
+    font-size: 16px;
+    letter-spacing: 2px;
+    overflow: auto;
+    border-radius: 30px;
+    border: 1px solid var(--txt-color);
+    padding: 20px;
+}
+
+.addAction form input[type="submit"] {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 18px;
+    background: none;
+    border: none;
+    padding: 10px 50px;
+    border-radius: 50px;
+    background-color: var(--color-blue);
+    color: var(--txt-color-bis);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    transition: 0.4s;
+}
+
+.addAction form input[type="submit"]:hover {
+    background-color: var(--color-blue-hover);
+    letter-spacing: 5px;
+    padding: 10px 75px;
+    transition: 0.4s;
+}
